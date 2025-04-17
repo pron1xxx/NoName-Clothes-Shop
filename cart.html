@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoName Корзина </title>
+    <link rel="stylesheet" href="./css/alls.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    <div class="burger_menu"> 
+        <div class="icons"> 
+            <img src="./media/icons/cart.svg" alt="cart" id="cart"> 
+            <img src="./media/icons/cros.svg" alt="close" id="close">
+        </div>
+        <ul class="burger-nav">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./catalog.html">Каталог</a></li>
+            <li><a href="#footer">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="wrapper"> 
+        <header class="header"> 
+            <div class="header-content"> 
+                <div class="header-logo"> <img src="./media/logo.svg" alt=""> </div>
+                <ul class="header-nav">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="#footer">Контакты</a></li>
+                </ul>
+                <div class="header-cart"> <img src="./media/icons/cart.svg" alt=""> </div>
+                <div class="burger_icon"> <img src="./media/icons/burger-menu.svg" alt=""> </div> 
+            </div>
+            
+        </header>
+
+       <article> <h1>Корзина</h1> <button class="clear"> Очистить корзину </button> </article> 
+       <div class="main_body"> 
+            <div class="left_block"> 
+                <div class="cart_eror"> 
+                    <img src="./media/icons/cart-icon.png" alt="">
+                    <h1> В корзине ничего нет. Добавим товары? </h1>
+                    <button id="open_catalog"> В каталог </button>
+                </div>
+                <div class="product_card"> 
+                    <div class="product_image"> <img src="./media/hoodies/hoddie1.jpg" alt=""> </div>
+                    <div class="product_title">
+                        <h1> Футболка вареная, с принтом Наруто </h1>
+                        <h2> 3299p </h2>
+
+                        <div class="count-product"> 
+                            <h1> Количество: 1 </h1>
+                            <div class="buttons"> 
+                                <button id="plus"> + </button>
+                                <button id="minus"> - </button>
+                            </div>
+                        </div>
+
+                        <div class="product_sizes"> 
+                            <ul> 
+                                <li> S </li>
+                                <li> M </li>
+                                <li> L </li>
+                                <li> XL </li>
+                            </ul>
+                        </div>
+                        <div class="delete_button"> <img src="./media/icons/cross.svg" alt=""> Удалить из корзины </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_block"> 
+                <h1> Сумма корзины </h1>
+                <div class="header_cart"> 
+                    <div class="cost_products">
+                        <div class="costs"> <h1 id="old_cost" class="old_cost"> 4568₽ </h1> <h1 id="new_coast"> 4568₽ </h1> </div>
+                        <h2 id="count_products_cart"> Товаров: 2 </h2>
+                    </div>
+                    <div class="promo_section"> 
+                        <div class="input_place"> <input type="text" id="promo" placeholder="Промокод"> <h2 id="skidka"> -20% скидка по коду </h2> </div>
+                        <div class="button" id="promo_submit"> Применить </div>
+                    </div>
+                </div>
+                <form action="" class="user_data">
+                    <h1> Контактные данные </h1>
+                    <div class="inputs"> 
+                        <input type="text" id="number" class="cart_input" placeholder="Номер телефона">
+                        <input type="text" id="adres"  class="cart_input" placeholder='Адрес для доставки'>
+                        <input type="text" id="comment"  class="cart_input" placeholder="Комментарий для нас">
+                    </div>
+                </form>
+
+                <div class="delivery_cost"> 
+                    <article> <h1> Сумма доставки </h1> <h1 id="delivery_cost"> 399₽</h1> </article>
+                    <progress max="20000" value="3599" id="progress_delivery"> </progress>
+                    <h2 id="remainder"> до доставки за 199₽ осталось 1198₽ </h2>
+                    <button type="submit" class="oform"> Оформить заказ </button>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <footer class="footer" style="z-index: 100;" id="footer"> 
+        <div class="wrapper">
+            <div class="logo_section">
+                <div class="logo_block">
+                    <div class="footer_logo"> <img src="./media/logo.svg" alt=""> </div>
+                    <h2> Магазин фирменной одежды </h2>
+                    <h2> © 2025 NoName </h2>
+                </div>
+                <div class="hr_div"> <hr> </div>
+                <div class="logo_block"> 
+                    <h2> г.Москва Охотничий ряд 104А </h2>
+                    <h2> +79388456767 </h2>
+                </div>
+            </div>
+           <div class="nav-sections">
+            <div class="nav-section"> 
+                <h1> Наш каталог </h1>
+                <ul>
+                    <li><a href="./catalog.html#Худи_h"> Худи </a></li>
+                    <li><a href="./catalog.html#Фуболки_h"> Футболки </a></li>
+                    <li><a href="./catalog.html#Штаны_h"> Штаны </a></li>
+                    <li><a href="./catalog.html#Рубашки_h"> Рубашки </a></li>
+                    <li><a href="./catalog.html#Топики_h"> Топики </a></li>
+                </ul>
+            </div>
+            <div class="nav-section"> 
+                <h1> О компании </h1>
+                <ul>
+                    <li><a href="./index.html"> Главная </a></li>
+                    <li><a href="./index.html#about"> Доставка </a></li>
+                    <li><a href="./index.html#about"> Материалы </a></li>
+                </ul>
+            </div>
+           </div>
+            
+            <div class="callback_section">
+                <form action="">
+                    <h1> Подписывайтесь </h1>
+                    <h2> Будте в курме наших новинок и акций </h2> 
+                    <div class="input"> <input type="text" placeholder="E-mail"> <div class="rel"> <button type="submit"> <img src="./media/icons/footer-input-submit.svg" alt=""> </button> </div> </div>
+                </form>
+                <div class="hr_div"> <hr> </div>
+                <div class="bottom_callback">
+                    <h2> Мы в социальных сетях </h2>
+                    <div class="socials_footer">
+                        <ul>
+                            <li> <a href="https://web.telegram.org/k/"><img src="./media/icons/tg-icon'.svg" alt=""></a></li>
+                            <li><a href="https://vk.com/offnezer"> <img src="./media/icons/vk-icon.svg" alt=""></a></li>
+                            <li><a href="https://youtube.com/"><img src="./media/icons/youtube-icon.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"> </script>
+    <script src="./js/cart.js"> </script>
+</body>
+</html>

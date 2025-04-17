@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Страница отзывов </title>
+    <link rel="stylesheet" href="./css/alls.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+</head>
+<body>
+    <div class="burger_menu"> 
+        <div class="icons"> 
+            <img src="./media/icons/cart.svg" alt="cart" id="cart"> 
+            <img src="./media/icons/cros.svg" alt="close" id="close">
+        </div>
+        <ul class="burger-nav">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./catalog.html">Каталог</a></li>
+            <li><a href="#footer">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="wrapper"> 
+        <header class="header"> 
+            <div class="header-content"> 
+                <div class="header-logo"> <img src="./media/logo.svg" alt=""> </div>
+                <ul class="header-nav">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="#footer">Контакты</a></li>
+                </ul>
+                <div class="header-cart"> <img src="./media/icons/cart.svg" alt=""> </div>
+                <div class="burger_icon"> <img src="./media/icons/burger-menu.svg" alt=""> </div> 
+            </div>
+            
+        </header>
+
+        <h1 id="page_name"> Отзывы </h1>
+        <div class="main_content"> 
+            <div class="feed-scroll"> 
+            <div class="hero-section-scroll"> 
+                <div class="product_image"> </div>
+                    <div class="product-info"> 
+                        <h1 id="product-name"> Футболка вареная, с принтом Наруто </h1>
+                        <button id="product-redirect"> На страницу товара </button>
+                        <div class="all_rait"> 
+                            <h1> Общая оценка </h1>
+                            <div class="rait_all"> <img src="./media/icons/star-light.svg" alt=""> <h1 id="raiting"> 4,8 </h1></div>
+                        </div>
+                        <h2 id="zakrep_h"> Закрепленный отзыв </h2>
+                        <div class="otz_card" id="fixed_feedback"> 
+                            <div class="otz_header"> <img src="./media/category1.png" alt=""> <h2 id="user_name_zakrep"> Аноним </h2> </div>
+                            <div class="stars"> 
+                                <ul> 
+                                    <li><img src="./media/icons/star-grey.svg" alt="" class="fixed_star"></li>
+                                    <li><img src="./media/icons/star-grey.svg" alt="" class="fixed_star"></li>
+                                    <li><img src="./media/icons/star-grey.svg" alt="" class="fixed_star"></li>
+                                    <li><img src="./media/icons/star-grey.svg" alt="" class="fixed_star"></li>
+                                    <li><img src="./media/icons/star-grey.svg" alt="" class="fixed_star"></li>
+                                </ul>
+                            </div>
+                            <h2 id="feedback_text_zakrep"> Очень круто сидит, приятная к телу и принт прям зашел. Спасибо </h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- <div class="otz_card bid-otz"> 
+                <div class="otz_header"> <img src="./media/category1.png" alt=""> <h2 id="user_name"> Аноним </h2> </div>
+                <div class="stars"> 
+                    <ul> 
+                        <li><img src="./media/icons/star-light.svg" alt=""></li>
+                        <li><img src="./media/icons/star-light.svg" alt=""></li>
+                        <li><img src="./media/icons/star-light.svg" alt=""></li>
+                        <li><img src="./media/icons/star-light.svg" alt=""></li>
+                        <li><img src="./media/icons/star-light.svg" alt=""></li>
+                    </ul>
+                </div>
+                <h2 id="feedback_text"> Очень круто сидит, приятная к телу и принт прям зашел. Спасибо </h2>
+            </div> -->
+        </div>
+
+        <form action="" class="create_feedback" id="feedbackForm"> 
+            <h1> Оставить отзыв </h1>
+            <input type="text" placeholder="Ваше имя" id="user_name_input" required>
+            <div class="choose-rait"> 
+                <h2> Поставьте оценку </h2>
+                <ul> 
+                    <li><img src="./media/icons/star-grey.svg" alt="" id="1" class="star"></li>
+                    <li><img src="./media/icons/star-grey.svg" alt="" id="2" class="star"></li>
+                    <li><img src="./media/icons/star-grey.svg" alt="" id="3" class="star"></li>
+                    <li><img src="./media/icons/star-grey.svg" alt="" id="4" class="star"></li>
+                    <li><img src="./media/icons/star-grey.svg" alt="" id="5" class="star"></li>
+                </ul>
+            </div>
+            <input type="text" placeholder="Расскажите о товаре" required id="user_comment">
+            <button type="submit"> Отправить </button>
+        </form>
+        
+        <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="feedbackDialog"> 
+        <h1 id="smile"> =) </h1>
+        <h2 id="feedback_modal_reaction"> Рады что вам все понравилось! </h2>
+        <h2 id="smaller"> Ваш отзыв отправлен на проверку </h2>
+        <button id="closeDialog">Закрыть</button>
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer" style="z-index: 100;" id="footer"> 
+        <div class="wrapper">
+            <div class="logo_section">
+                <div class="logo_block">
+                    <div class="footer_logo"> <img src="./media/logo.svg" alt=""> </div>
+                    <h2> Магазин фирменной одежды </h2>
+                    <h2> © 2025 NoName </h2>
+                </div>
+                <div class="hr_div"> <hr> </div>
+                <div class="logo_block"> 
+                    <h2> г.Москва Охотничий ряд 104А </h2>
+                    <h2> +79388456767 </h2>
+                </div>
+            </div>
+           <div class="nav-sections">
+            <div class="nav-section"> 
+                <h1> Наш каталог </h1>
+                <ul>
+                    <li><a href="./catalog.html#Худи_h"> Худи </a></li>
+                    <li><a href="./catalog.html#Фуболки_h"> Футболки </a></li>
+                    <li><a href="./catalog.html#Штаны_h"> Штаны </a></li>
+                    <li><a href="./catalog.html#Рубашки_h"> Рубашки </a></li>
+                    <li><a href="./catalog.html#Топики_h"> Топики </a></li>
+                </ul>
+            </div>
+            <div class="nav-section"> 
+                <h1> О компании </h1>
+                <ul>
+                    <li><a href="./index.html"> Главная </a></li>
+                    <li><a href="./index.html#about"> Доставка </a></li>
+                    <li><a href="./index.html#about"> Материалы </a></li>
+                </ul>
+            </div>
+           </div>
+            
+            <div class="callback_section">
+                <form action="">
+                    <h1> Подписывайтесь </h1>
+                    <h2> Будте в курме наших новинок и акций </h2> 
+                    <div class="input"> <input type="text" placeholder="E-mail"> <div class="rel"> <button type="submit"> <img src="./media/icons/footer-input-submit.svg" alt=""> </button> </div> </div>
+                </form>
+                <div class="hr_div"> <hr> </div>
+                <div class="bottom_callback">
+                    <h2> Мы в социальных сетях </h2>
+                    <div class="socials_footer">
+                        <ul>
+                            <li> <a href="https://web.telegram.org/k/"><img src="./media/icons/tg-icon'.svg" alt=""></a></li>
+                            <li><a href="https://vk.com/offnezer"> <img src="./media/icons/vk-icon.svg" alt=""></a></li>
+                            <li><a href="https://youtube.com/"><img src="./media/icons/youtube-icon.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"> </script>
+    <script src="./js/feedback.js"> </script>
+</body>
+</html>

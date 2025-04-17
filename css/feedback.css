@@ -1,0 +1,370 @@
+:root {
+    --main-bg-color: #1C1C1C;
+    --main-text-color: #818181;
+    --main-border-color: #262626;
+    --main-actent-color: #006DD3;
+    --main-color: white;
+    --body-color: #151515;
+    --body-color-2: #171717;
+}
+
+.main_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap-reverse;
+    align-items: start;
+}
+
+#page_name {
+    font-size: clamp(24px, 4vw ,40px);
+    color: var(--main-color);
+    margin-top: clamp(50px, 8.4vw ,70px); 
+    margin-bottom: clamp(30px, 5vw ,50px);
+}
+
+.feed-scroll {
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    max-width: clamp(420px, 50vw, 830px);
+}
+
+.hero-section-scroll {
+    display: flex;
+    flex-grow: 1;
+}
+
+.product_image {
+    background-image: url(../media/T-shirtSaske.png);
+    width: clamp(172px, 29vw, 264px);
+    height: clamp(239px, 30vw,372px);
+    min-height: 239px;
+    min-width: 172px;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 17px;
+    justify-content: space-between;
+    height: clamp(239px, 30vw,372px);
+    width: clamp(200px, 20vw, 400px);
+}
+
+.product-info h1 {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--main-color);
+    max-width: 200px;
+}
+
+.product-info button {
+    width: clamp(127px, 21vw ,163px);
+    height: clamp(26px, 4.5vw , 33px);
+    font-size: clamp(10px, 1.7vw ,13px);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    color: var(--main-color);
+    background-color: var(--main-actent-color);
+    margin-top: clamp(10px, 1.6vw, 20px);
+    min-height: 26px;
+}
+
+.all_rait {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.all_rait h1 {
+    color: var(--main-color);
+    font-weight: 300;
+    font-size: clamp(15px, 2.5vw ,20px);
+}
+
+.rait_all {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rait_all img {
+    width: clamp(20px, 4vw ,24px);
+    height: clamp(20px, 4vw ,24px);
+}
+
+.rait_all h1 {
+    color: #FFC74E;
+}
+
+.product-info h2 {
+    color: var(--main-color);
+    font-size: 12px;
+    color: var(--main-text-color);
+    font-weight: 300;
+    margin-top: clamp(16px, 2.8vw, 69px);
+}
+
+.otz_card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 20px 20px 20px 20px;
+    padding-top: 19px;
+    padding-left: 18px;
+    margin-top: 6px;
+    width: clamp(162px, 27vw ,258px);
+    height: clamp(84px, 14vw ,168px);
+}
+
+.otz_header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.otz_header img {
+    width: clamp(25px, 4vw ,35px);
+    height: clamp(25px, 4vw ,35px);
+    border-radius: 100px;
+}
+
+.otz_header h2 {
+    font-weight: 300;
+    font-size: clamp(15px, 2.5vw ,20px);
+}
+
+.stars ul {
+    display: flex;
+    gap: 5px;
+    margin-top: clamp(6px, 1vw, 10px);
+}
+
+.stars ul img {
+    width: clamp(14px, 2.3vw ,20px);
+    height: clamp(14px, 2.3vw ,20px);
+}
+
+.otz_card h2 {
+    margin-top: 18px;
+    font-size: clamp(10px, 1.8vw ,13px);
+    color: var(--main-text-color);
+    font-weight: 300;
+}
+
+.otz_card .otz_header h2 {
+    color: var(--main-color);
+    font-size: 15px;
+    margin: 0;
+    display: block;
+}
+
+#not_zakrep {
+    font-size: clamp(15px, 2.5vw ,20px);
+    display: none;
+}
+
+.bid-otz {
+    height: clamp(239px, 40vw,372px);
+    width: clamp(171px, 28.5vw ,258px);
+    min-width: 171px;
+}
+
+.create_feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 24px;
+    min-height: 372px;
+    justify-content: center;
+    width: 334px;
+    max-height: 372px;
+}
+
+.create_feedback h1 {
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.create_feedback input {
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-border-color);
+    padding-left: 12px;
+    width: 224px;
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--main-text-color);
+}
+
+.create_feedback #user_name_input {
+    height: 26px;
+}
+
+.create_feedback #user_comment {
+    height: 125px;
+    padding-bottom: 90px;
+}
+
+.choose-rait {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.choose-rait h2 {
+    color: var(--main-text-color);
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.choose-rait ul {
+    display: flex;
+    gap: 5px;   
+}
+
+.choose-rait ul img {
+    width: 20px;
+    height: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.create_feedback button {
+    width: 126px;
+    height: 28px;
+    color: var(--main-color);
+    background-color: var(--main-actent-color);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+}
+
+/* Стили для затемнения фона */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+    display: none; /* Скрыто по умолчанию */
+    z-index: 1; /* Поднимаем на уровень выше остальных элементов */
+}
+
+/* Стили для модального окна */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем модальное окно */
+    background-color: var(--main-bg-color);
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid var(--main-border-color);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Выше затемнения */
+    display: none; /* Скрыто по умолчанию */
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+.modal #smile {
+    font-size: clamp(36px, 6vw, 150px);
+    color: var(--main-text-color);
+    user-select: none;
+}
+
+.modal h2 {
+    color: var(--main-text-color);
+    font-weight: 300;
+    font-size: clamp(13px, 2.5vw, 36px);
+    user-select: none;
+}
+
+.modal #smaller {
+    font-size: clamp(10px, 1.5vw, 24px);
+}
+
+.modal button {
+    margin-top: 30px;
+    border: none;
+    background-color: var(--main-actent-color);
+    padding: 10px 50px;
+    color: var(--main-color);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+@media(max-width: 386px) {
+    .feed-scroll {
+        justify-content: center;
+    }
+
+    .hero-section-scroll {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product_image {
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(max-width: 600px) {
+    .otz_card {
+        padding-top: 14px;
+        padding-left: 14px;
+    }
+
+    .bid-otz {
+        padding-right: 10px;
+    }
+
+    .main_content {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 810px) {
+    .main_content {
+        justify-content: center;
+    }
+
+    #page_name {
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 1070px) {
+    .otz_card h2 {
+        display: none;
+    }
+
+    .bid-otz h2 {
+        display: block;
+    }
+}

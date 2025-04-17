@@ -1,0 +1,271 @@
+:root {
+    --main-bg-color: #1C1C1C;
+    --main-text-color: #818181;
+    --main-border-color: #262626;
+    --main-actent-color: #006DD3;
+    --main-color: white;
+    --body-color: #151515;
+    --body-color-2: #171717;
+    --bg-color-card: #181818;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    margin-top: 66px;
+}
+
+.main_information {
+    display: flex;
+    gap: 33px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.small_photo_section {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.small_photo {
+    width: 114px;
+    height: 151px;
+    border-radius: 5px 5px 5px 5px;
+    background-size: 100%;
+}
+
+.big_photo {
+    width: clamp(369px, 100%, 528px);
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    height: clamp(370px,80vw,703px);
+    transition:all 0.4s ease;
+    background-image: url(../media/hoodies/hoddie1.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 50px;
+}
+
+.big_photo:hover {
+    background-size: 150%;
+}
+
+.feedback_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_product_block {
+    width: clamp(370px, 100%, 494px);
+    background-color: var(--bg-color-card);
+    border-radius: 20px 20px 20px 20px;
+    padding-left: clamp(20px, 3.5vw, 47px);
+    padding-top: clamp(34px, 4vw ,61px);
+    padding-bottom: 30px;
+    padding-right: 5px;
+}
+
+.product_information_section h1 {
+    text-transform: capitalize;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 300;
+    color: var(--main-color);
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+    margin-top: clamp(10px,1.5vw,22px);
+}
+
+.sizes div {
+    width: clamp(30px, 3vw, 40px);
+    height: clamp(30px, 3vw, 40px);
+    font-size: clamp(10px, 1vw, 16px);
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-border-color);
+    color: var(--main-text-color);
+    border-radius: 4px 4px 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.texts {
+    margin-top: 25px;
+}
+
+.texts h2 {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.texts p {
+    font-size: clamp(11px, 1vw, 15px);
+    color: var(--main-text-color);
+    font-weight: 300;
+    margin-top: 7px;
+    max-width: 400px;
+}
+
+.button_section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    flex-wrap: wrap-reverse;
+    margin-top: clamp(30px, 4vw ,50px);
+    gap: 16px;
+}
+
+.button_section button {
+    width: clamp(135px, 10vw ,185px);
+    height: clamp(31px, 3vw, 44px);
+    background-color: var(--main-color);
+    color: black;
+    font-size: clamp(12px, 2vw, 15px);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+}
+
+.button_section h2 {
+    font-size: clamp(32px, 3vw, 40px);
+    color: var(--main-text-color);
+    font-weight: 600;
+}
+
+.feedback_section article {
+    display: flex;
+    margin-top: clamp(20px, 3vw ,32px);
+    gap: 17px;
+}
+
+.feedback_section article h1 {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.mark {
+    display: flex;
+}
+
+.mark img {
+    max-width: 24px;
+    min-width: 24px;
+}
+
+.mark span {
+    color: #FFC74E;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 300;
+}
+
+.otzs {
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.otz_card {
+    margin-top: 17px;
+    background-color: var(--body-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 20px 20px 20px 20px;
+    max-width: 326px;
+    padding: 16px;
+    min-height: 134px;
+}
+
+.header_otz {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    align-items: center;
+}
+
+.header_otz .user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header_otz .user .avatar {
+    max-width: 45px;
+    max-height: 45px;
+    min-height: 45px;
+    min-width: 45px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.header_otz .user h1 {
+    color: var(--main-color);
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: 300;
+}
+
+.header_otz .stars ul {
+    display: flex;
+    gap: 5px;
+}
+
+.header_otz .stars ul li {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.otz_card h2 {
+    color: var(--main-text-color);
+    font-weight: 300;
+    font-size: clamp(10px, 1vw, 13px);
+    margin-top: 10px;
+}
+
+.otz_count_block {
+    width: 50px;
+    height: 50px;
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: var(--body-color);
+    border: 1px solid var(--main-border-color);
+    align-self: flex-end;
+    border-radius: 4px 4px 4px 4px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 150px;
+}
+
+.right_product_block .sizes .checked {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-actent-color);
+    color: var(--main-color);
+}
+
+@media (max-width: 690px) {
+    .small_photo_section {
+        display: none;
+    }
+
+    .main_information {
+        padding: 0px 10px;
+    }
+}
+
+
+
+

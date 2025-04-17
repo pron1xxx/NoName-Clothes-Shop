@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --main-bg-color: #1C1C1C;
+    --main-text-color: #818181;
+    --main-border-color: #262626;
+    --main-actent-color: #006DD3;
+    --main-color: white;
+    --body-color: #151515;
+    --body-color-2: #171717;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: 'Segoe UI';
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 63px;
+    flex-grow: 1;
+}
+
+.header-logo {
+    min-width: 60px;
+    min-height: 32px;
+}
+
+.header-content ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content a {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header-cart {
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.burger_icon {
+    min-width: 24px;
+    width: 24px;
+    min-height: 24px;
+    height: 24px;
+    display: none;
+}
+
+.burger_menu {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body-color);
+    position: fixed;
+    z-index: 100;
+    padding: 40px 20px;
+    bottom: 5000px;
+    transition: all 0.6s ease;
+}
+
+.burger_menu .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger_menu .icons img {
+    cursor: pointer;
+}
+
+.burger_menu img {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.burger-nav {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.burger-nav li{
+    width: 100%;
+    border-bottom: 1px solid var(--main-text-color);
+    padding-bottom: 7px;
+}
+
+.burger-nav a {
+    color: var(--main-text-color);
+}
+
+
+.footer {
+    background-color: var(--body-color-2);
+}
+
+.footer hr {
+    border: 1px solid var(--main-color);
+    width: 100%;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    gap: 25px;
+    padding: 72px 15px;
+}
+
+.logo_section {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.logo_block {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer_logo {
+    width: 113px;
+    min-width: 113px;
+}
+
+.logo_section h2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--main-color);
+}
+
+.hr_div {
+    width: 271px;
+}
+
+.footer h1 {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 500;
+    font-size: clamp(16px,2vw,24px);
+}
+
+.footer h2 {
+    font-size: clamp(13px,2vw,20px);
+}
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.nav-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-section ul li a {
+    color: var(--main-text-color);
+    font-weight: 300;
+    font-size: clamp(14px,2vw,20px);
+}
+
+.callback_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.callback_section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.callback_section h2 {
+    font-size: clamp(14px,2vw,20px);
+    font-weight: 300;
+    color: var(--main-color);
+}
+
+.callback_section form .input {
+    display: flex;
+    margin-top: 20px;
+}
+
+.callback_section form input {
+    border: none;
+    padding-left: 12px;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #222222;
+    width: 275px;
+    height: 58px;
+    font-size: clamp(14px,2vw,20px);
+}
+
+.callback_section form .rel {
+    position: relative;
+}
+
+.callback_section form button {
+    position: absolute;
+    left: -90px;
+    background-color: var(--main-actent-color);
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    width: 90px;
+    height: 60px;
+}
+
+.callback_section form button img {
+    width: 32px;
+    height: 32px;
+}
+
+.socials_footer ul {
+    display: flex;
+    gap: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 11px;
+}
+
+.socials_footer ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.nav-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 400px;
+    flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+    .burger_icon {
+        display: block;
+    }
+
+    .header-content {
+        padding: 0px 33px;
+    }
+
+    .header-content ul {
+        display: none;
+    }
+
+    .header-cart {
+        display: none;
+    }
+
+    .nav-sections {
+        gap: 22px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .wrapper {
+        justify-content: center;
+    }
+
+    .logo_block {
+        align-items: center;
+    }
+
+    .nav-sections {
+        justify-content: center;
+    }
+
+    .socials_footer ul {
+        justify-content: center;
+    }
+}
+

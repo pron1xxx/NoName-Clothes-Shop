@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoName каталог товаров</title>
+    <link rel="stylesheet" href="./css/alls.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+</head>
+<body>
+    <div class="burger_menu"> 
+        <div class="icons"> 
+            <img src="./media/icons/cart.svg" alt="cart" id="cart"> 
+            <img src="./media/icons/cros.svg" alt="close" id="close">
+        </div>
+        <ul class="burger-nav">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./catalog.html">Каталог</a></li>
+            <li><a href="#footer">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="wrapper"> 
+        <header class="header"> 
+            <div class="header-content"> 
+                <div class="header-logo"> <img src="./media/logo.svg" alt=""> </div>
+                <ul class="header-nav">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="#footer">Контакты</a></li>
+                </ul>
+                <div class="header-cart"> <img src="./media/icons/cart.svg" alt=""> </div>
+                <div class="burger_icon"> <img src="./media/icons/burger-menu.svg" alt=""> </div> 
+            </div>
+            
+        </header>
+
+        <div class="main_body">
+            <div class="left_block"> 
+                <h1 class="cross_filters"> + </h1>
+                <div class="cost" id="cost">
+                    <h1> Цена </h1>
+                    <div class="inputs"> 
+                        <div class="input_place">
+                            <p> от </p>
+                            <input type="ot_number">
+                        </div>
+                        <div class="input_place">
+                            <p> до </p>
+                            <input type="do_number">
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_section" id="category"> 
+                    <h1> Категория </h1>
+                    <ul> 
+                        <li><input class="checkbox" type="checkbox" id="tshirt"> <label for="tshirt"><span>Футболки</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="hoodie"> <label for="hoodie"><span>Худи</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="pants"> <label for="pants"><span>Штаны</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="shirt"> <label for="pants"><span>Рубашки</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="tops"> <label for="pants"><span>Топы</span></label></li>
+                    </ul>
+                </div>
+                <div class="filter_section" id="size"> 
+                    <h1> Размер </h1>
+                    <ul> 
+                        <li><input class="checkbox" type="checkbox" id="S"> <label for="S"><span>S</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="M"> <label for="M"><span>M</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="L"> <label for="L"><span>L</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="XL"> <label for="XL"><span>XL</span></label></li>
+                    </ul>
+                </div>
+                <div class="filter_section" id="gender"> 
+                    <h1> Пол </h1>
+                    <ul> 
+                        <li><input class="checkbox" type="checkbox" id="women"> <label for="women"><span>Для девушек</span></label></li>
+                        <li><input class="checkbox" type="checkbox" id="men"> <label for="man"><span>Для мужчин</span></label></li>
+                </div>
+                <div class="buttons"> 
+                    <button id="filter_submit"> Применить </button>
+                    <button id="filter_reset"> Сбросить </button>
+                </div>
+            </div>
+    
+            <div class="right_block"> 
+                <div class="filters_right"> 
+                    <div class="filter_icon"> 
+                        <img src="./media/icons/filter.svg" alt=""> 
+                    </div>
+                    Открыть фильры
+                </div>
+                <div class="eror_screen">
+                    <h1> =( </h1>
+                    <h2> По вашему запросу ничего не найдено </h2>
+                    <button id="eror_reset"> Сбросить фильтры </button>
+                </div>
+                <div class="tovar_cards">
+                </div>
+            </div>    
+        </div> 
+    </div>  
+
+    <footer class="footer" style="z-index: 100;" id="footer"> 
+        <div class="wrapper">
+            <div class="logo_section">
+                <div class="logo_block">
+                    <div class="footer_logo"> <img src="./media/logo.svg" alt=""> </div>
+                    <h2> Магазин фирменной одежды </h2>
+                    <h2> © 2025 NoName </h2>
+                </div>
+                <div class="hr_div"> <hr> </div>
+                <div class="logo_block"> 
+                    <h2> г.Москва Охотничий ряд 104А </h2>
+                    <h2> +79388456767 </h2>
+                </div>
+            </div>
+           <div class="nav-sections">
+            <div class="nav-section"> 
+                <h1> Наш каталог </h1>
+                <ul>
+                    <li><a href="./catalog.html#Худи_h"> Худи </a></li>
+                    <li><a href="./catalog.html#Фуболки_h"> Футболки </a></li>
+                    <li><a href="./catalog.html#Штаны_h"> Штаны </a></li>
+                    <li><a href="./catalog.html#Рубашки_h"> Рубашки </a></li>
+                    <li><a href="./catalog.html#Топики_h"> Топики </a></li>
+                </ul>
+            </div>
+            <div class="nav-section"> 
+                <h1> О компании </h1>
+                <ul>
+                    <li><a href="./index.html"> Главная </a></li>
+                    <li><a href="./index.html#about"> Доставка </a></li>
+                    <li><a href="./index.html#about"> Материалы </a></li>
+                </ul>
+            </div>
+           </div>
+            
+            <div class="callback_section">
+                <form action="">
+                    <h1> Подписывайтесь </h1>
+                    <h2> Будте в курме наших новинок и акций </h2> 
+                    <div class="input"> <input type="text" placeholder="E-mail"> <div class="rel"> <button type="submit"> <img src="./media/icons/footer-input-submit.svg" alt=""> </button> </div> </div>
+                </form>
+                <div class="hr_div"> <hr> </div>
+                <div class="bottom_callback">
+                    <h2> Мы в социальных сетях </h2>
+                    <div class="socials_footer">
+                        <ul>
+                            <li> <a href="https://web.telegram.org/k/"><img src="./media/icons/tg-icon'.svg" alt=""></a></li>
+                            <li><a href="https://vk.com/offnezer"> <img src="./media/icons/vk-icon.svg" alt=""></a></li>
+                            <li><a href="https://youtube.com/"><img src="./media/icons/youtube-icon.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"> </script>
+    <script src="./js/catalog.js"> </script>
+</body>
+</html>
