@@ -27,7 +27,7 @@ html {
 
 body {
     background-color: var(--body-color);
-    font-family: 'MySegoe', system-ui;
+    font-family: 'MySegoe';
 }
 
 a {
