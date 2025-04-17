@@ -13,6 +13,7 @@ if (Object.keys(feedbacks_catalogpage).length == 0) {
         };
         document.head.appendChild(script);
     }
+
     const timerId = setTimeout(() => {
         window.location.assign("./catalog.html")
       }, 1000)
@@ -20,7 +21,6 @@ if (Object.keys(feedbacks_catalogpage).length == 0) {
     loadScript('./js/feedbacks-generate.js');
 }
 else {
-
 let towars =[]
 sizes = ['S','M','L', 'XL']
 
@@ -293,12 +293,12 @@ let close_button_catalog = document.querySelector('.cross_filters')
 
 show_button_catalog.addEventListener('click', show_filters)
 function show_filters() {
-    document.querySelector(".left_block").style.left = '0vh'
+    document.querySelector(".left_block").style.display= 'flex'
 }
 
 close_button_catalog.addEventListener('click', close_filters)
 function close_filters() {
-    document.querySelector(".left_block").style.left = '100vh'
+    document.querySelector(".left_block").style.display = 'none'
 }
 
 function open_product_page() {

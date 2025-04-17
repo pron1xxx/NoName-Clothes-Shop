@@ -12,11 +12,11 @@ open_button.addEventListener('click',show_menu)
 let menu = document.querySelector(".burger_menu");
 
 function show_menu() {
-    menu.style.bottom = '0vh';
+    menu.style.display = 'block';
 }
 
 function hide_menu() {
-    menu.style.bottom = '100vh';
+    menu.style.display = 'none';
 }
 
 document.querySelector(".header-cart").addEventListener('click', function() {

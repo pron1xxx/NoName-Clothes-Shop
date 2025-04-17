@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@font-face {
+    font-family: 'MySegoe'; 
+    src: url('./fonts/SegoeUI.ttf') format('ttf')
+}
 
 :root {
     --main-bg-color: #1C1C1C;
@@ -24,7 +27,7 @@ html {
 
 body {
     background-color: var(--body-color);
-    font-family: 'Segoe UI';
+    font-family: 'MySegoe', system-ui;
 }
 
 a {
@@ -112,8 +115,8 @@ button {
     position: fixed;
     z-index: 100;
     padding: 40px 20px;
-    bottom: 5000px;
     transition: all 0.6s ease;
+    display: none;
 }
 
 .burger_menu .icons {

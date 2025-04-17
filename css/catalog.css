@@ -346,11 +346,10 @@ input {
         height: 100vh;
         min-width: 100vw;
         min-height: 100vh;
-        flex-wrap: wrap;
         top: 0px;
         padding-left: 30px;
         padding-right: 30px;
-        left: 100vw;
+        display: none;
         transition: all 0.4s ease;
     }
 
