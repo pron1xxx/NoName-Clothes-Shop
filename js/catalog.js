@@ -13,8 +13,11 @@ if (Object.keys(feedbacks_catalogpage).length == 0) {
         };
         document.head.appendChild(script);
     }
+    const timerId = setTimeout(() => {
+        window.location.assign("./catalog.html")
+      }, 1000)
+    
     loadScript('./js/feedbacks-generate.js');
-    window.location.assign("./catalog.html")
 }
 else {
 
