@@ -1,4 +1,4 @@
-@font-face {
+go@font-face {
     font-family: "Segoe";  
     src: url("../fonts/SegoeUI.ttf") format("truetype"); 
     font-style: normal; 
@@ -29,7 +29,7 @@ html {
 
 body {
     background-color: var(--body-color);
-    font-family: 'MySegoe';
+    font-family: 'Segoe';
 }
 
 a {
