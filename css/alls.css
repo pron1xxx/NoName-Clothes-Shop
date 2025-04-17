@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'MySegoe'; 
-    src: url("../fonts/SegoeUI.ttf") 
+    font-family: "RalewayRegular";  
+    src: url("../fonts/SegoeUI.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
 }
 
 :root {
